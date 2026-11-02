@@ -223,54 +223,55 @@
                 </p>
             </div>
 
-            <!-- Storybook Layout Grid: Chapter 1 | Hero Portrait | Chapter 2 -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center my-6 sm:my-8">
+<!-- Storybook Layout Grid: Chapter 1 | Hero Portrait | Chapter 2 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center my-10 sm:my-16">
+            
+            <!-- Story Vignette: Chapter I -->
+            <div class="lg:col-span-3 order-2 lg:order-1 capiz-glass p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-goldLeaf/30 shadow-lg text-left space-y-2 gold-border-card min-h-[220px] sm:min-h-[240px] flex flex-col justify-center">
+                <span class="font-cinzel text-[10px] font-bold text-goldLeaf uppercase tracking-[0.25em]">Chapter I</span>
+                <h3 class="font-serif text-base sm:text-lg md:text-xl text-deepMahogany font-bold">How We Met</h3>
+                <p class="font-sans text-xs sm:text-sm text-mahogany font-normal leading-relaxed">
+                    What began as a quiet church friendship between Richard and Lily soon grew into something deeper. Through shared conversations, endless laughter, and an easy, gentle harmony, they found a true partner for life in one another.
+                </p>
+            </div>
+
+            <!-- Central Premium Portrait Frame (Taller & Dominant) -->
+            <div class="lg:col-span-6 order-1 lg:order-2 max-w-md sm:max-w-lg lg:max-w-xl mx-auto relative group w-full">
+                <!-- Golden Foil Glow Backdrop -->
+                <div class="absolute -inset-3 bg-gradient-to-r from-goldLeaf/20 via-goldLeaf/40 to-goldLeaf/20 rounded-[2.5rem] sm:rounded-[3rem] blur-xl opacity-75 group-hover:opacity-100 transition duration-1000"></div>
                 
-                <!-- Story Vignette: Chapter I -->
-                <div class="lg:col-span-3 order-2 lg:order-1 capiz-glass p-5 sm:p-7 rounded-2xl sm:rounded-3xl border border-goldLeaf/30 shadow-lg text-left space-y-2.5 sm:space-y-3 gold-border-card">
-                    <span class="font-cinzel text-[10px] sm:text-[11px] font-bold text-goldLeaf uppercase tracking-[0.25em]">Chapter I</span>
-                    <h3 class="font-serif text-lg sm:text-xl md:text-2xl text-deepMahogany font-bold">How We Met</h3>
-                    <p class="font-sans text-xs sm:text-sm text-mahogany font-normal leading-relaxed">
-                        What began as quiet church friendship between Richard and Lily soon grew into something deeper. Through shared conversations, endless laughter, and an easy, gentle harmony, they found a true partner for line in one another. 
-                    </p>
-                </div>
+                <!-- Main Glass Frame (Now set to h-full & flex so it follows the tall image) -->
+                <div class="relative w-full h-full capiz-glass p-4 sm:p-6 rounded-[2rem] sm:rounded-[2.5rem] border-2 border-goldLeaf/50 shadow-2xl overflow-hidden flex flex-col justify-between">
+                    <!-- Tall Aspect Ratio & Fixed Heights -->
+                    <div class="relative w-full rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden aspect-[3/4] sm:h-[480px] lg:h-[540px] border border-goldLeaf/30 shadow-inner flex-grow">
+                        <img 
+                            src="Images/Hero_Section.jpeg" 
+                            alt="Richard & Lily" 
+                            class="w-full h-full object-cover transform scale-110 group-hover:scale-115 transition-transform duration-1000 ease-out"
+                            onerror="this.src='https://placehold.co/800x1000/FAF8F5/5A3D28?text=Richard+%26+Lily';"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/50 via-transparent to-transparent"></div>
+                    </div>
 
-                <!-- Central Premium Portrait Frame -->
-                <div class="lg:col-span-6 order-1 lg:order-2 max-w-xs sm:max-w-sm lg:max-w-md mx-auto relative group w-full">
-                    <!-- Golden Foil Glow Backdrop -->
-                    <div class="absolute -inset-2 bg-gradient-to-r from-goldLeaf/20 via-goldLeaf/40 to-goldLeaf/20 rounded-[2.5rem] sm:rounded-[3rem] blur-xl opacity-75 group-hover:opacity-100 transition duration-1000"></div>
-                    
-                    <!-- Main Glass Frame -->
-                    <div class="relative capiz-glass p-3 sm:p-4 rounded-[2rem] sm:rounded-[2.5rem] border-2 border-goldLeaf/50 shadow-2xl overflow-hidden">
-                        <div class="relative rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden aspect-[4/5] border border-goldLeaf/30 shadow-inner">
-                            <img 
-                                src="Images/Hero_Section.jpeg" 
-                                alt="Richard & Lily" 
-                                class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-1000 ease-out"
-                                onerror="this.src='https://placehold.co/800x1000/FAF8F5/5A3D28?text=Richard+%26+Lily';"
-                            />
-                            <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/50 via-transparent to-transparent"></div>
-                        </div>
-
-                        <!-- Floating Capiz Badge -->
-                        <div class="absolute bottom-5 sm:bottom-6 left-0 right-0 text-center px-4">
-                            <div class="inline-block capiz-glass border border-goldLeaf/60 px-4 sm:px-6 py-1.5 sm:py-2 rounded-full shadow-lg">
-                                <span class="font-cinzel text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.25em] text-deepMahogany uppercase font-bold">Our Journey Begins</span>
-                            </div>
+                    <!-- Floating Capiz Badge -->
+                    <div class="relative mt-4 text-center px-4">
+                        <div class="inline-block capiz-glass border border-goldLeaf/60 px-5 sm:px-7 py-2 sm:py-2.5 rounded-full shadow-lg">
+                            <span class="font-cinzel text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.25em] text-deepMahogany uppercase font-bold">Our Journey Begins</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Story Vignette: Chapter II -->
-                <div class="lg:col-span-3 order-3 lg:order-3 capiz-glass p-5 sm:p-7 rounded-2xl sm:rounded-3xl border border-goldLeaf/30 shadow-lg text-left space-y-2.5 sm:space-y-3 gold-border-card">
-                    <span class="font-cinzel text-[10px] sm:text-[11px] font-bold text-goldLeaf uppercase tracking-[0.25em]">Chapter II</span>
-                    <h3 class="font-serif text-lg sm:text-xl md:text-2xl text-deepMahogany font-bold">The Proposal</h3>
-                    <p class="font-sans text-xs sm:text-sm text-mahogany font-normal leading-relaxed">
-                        Surrounded by good friends at 113 Wagner Cafe, matching in cozy Harry Potter cardigans, what started as a warm, intimate lunch turned into a moment Richard and Lily would cherish forever. Mid-laughter, a lovely question was asked: "Will you marry me?" With a bright smile, Lily's instant, playful "G!" sealed the promise of a lifetime together.
-                    </p>
-                </div>
-
             </div>
+
+            <!-- Story Vignette: Chapter II -->
+            <div class="lg:col-span-3 order-3 lg:order-3 capiz-glass p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-goldLeaf/30 shadow-lg text-left space-y-2 gold-border-card min-h-[220px] sm:min-h-[240px] flex flex-col justify-center">
+                <span class="font-cinzel text-[10px] font-bold text-goldLeaf uppercase tracking-[0.25em]">Chapter II</span>
+                <h3 class="font-serif text-base sm:text-lg md:text-xl text-deepMahogany font-bold">The Proposal</h3>
+                <p class="font-sans text-xs sm:text-sm text-mahogany font-normal leading-relaxed">
+                    What unfolded as a cozy lunch among good friends at 113 Wagner Cafe soon turned into a moment to cherish forever. Surrounded by laughter, matching cardigans, and a joyful "Will you marry me?", Lily smiled and said "G!" to a lifetime together.
+                </p>
+            </div>
+
+        </div>
 
             <!-- Date & Countdown Sub-Banner -->
             <div class="space-y-5 sm:space-y-6 pt-2">
@@ -305,7 +306,15 @@
 
         </div>
     </section>
-
+<!-- PREMIUM METALLIC DIVIDER WITH FILIPINIANA MOTIF -->
+    <div class="relative py-4 flex items-center justify-center max-w-xl mx-auto px-6">
+        <div class="flex-grow h-px bg-gradient-to-r from-transparent via-goldLeaf to-amber-200"></div>
+        <div class="mx-3 text-goldLeaf rotate-45 transform text-[8px]">
+            <i class="fas fa-diamond"></i>
+        </div>
+        <div class="flex-grow h-px bg-gradient-to-l from-transparent via-goldLeaf to-amber-200"></div>
+    </div>
+	
     <!-- PRENUP & CHERISHED MOMENTS SECTION (COVERFLOW CAROUSEL) -->
     <section id="prenup" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto space-y-8 sm:space-y-10 overflow-hidden relative">
         <!-- Subtle Ambient Gold Glow Background -->
@@ -327,14 +336,15 @@
         <div class="relative py-4 sm:py-6 z-10">
             <div class="swiper coverflowSwiper w-full max-w-5xl mx-auto !pb-14 sm:!pb-16 !pt-4">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
+
+                    <!-- Slide-->
                     <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
                         <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
                             <!-- Soft Active Ambient Halo -->
                             <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
                             
                             <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop" 
+                                <img src="Moments/First_Date.jpg" 
                                      alt="Golden Hour Embrace" 
                                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
                                      onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
@@ -348,87 +358,232 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Slide 2 -->
+					
+                    <!-- Slide-->
                     <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
                         <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
                             <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
                             
                             <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop" 
-                                     alt="Whispers of Eternity" 
+                                <img src="Moments/First_Concert.jpg" 
+                                     alt="Golden Hour Embrace" 
                                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
-                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Whispers+of+Eternity';" />
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
                                 <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
 
+                                <!-- Editorial Overlay Caption -->
                                 <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
-                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Filipiniana Portraits</span>
-                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Whispers of Eternity</h3>
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Slide 3 -->
+					
+					<!-- Slide-->
                     <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
                         <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
                             <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
                             
                             <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" 
-                                     alt="A Quiet Promise" 
+                                <img src="Moments/First_HP_Concert.jpg" 
+                                     alt="Golden Hour Embrace" 
                                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
-                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=A+Quiet+Promise';" />
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
                                 <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
 
+                                <!-- Editorial Overlay Caption -->
                                 <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
-                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Garden Serenade</span>
-                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">A Quiet Promise</h3>
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Slide 4 -->
+					
+					<!-- Slide-->
                     <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
                         <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
                             <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
                             
                             <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=800&auto=format&fit=crop" 
-                                     alt="Laughter & Luminous Skies" 
+                                <img src="Moments/Bday_Arrows.jpg" 
+                                     alt="Golden Hour Embrace" 
                                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
-                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Laughter+%26+Luminous+Skies';" />
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
                                 <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
 
+                                <!-- Editorial Overlay Caption -->
                                 <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
-                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Late Afternoon Stroll</span>
-                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Laughter &amp; Luminous Skies</h3>
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Slide 5 -->
+					
+					<!-- Slide-->
                     <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
                         <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
                             <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
                             
                             <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=800&auto=format&fit=crop" 
-                                     alt="Forever Begins Now" 
+                                <img src="Moments/First_Wedding.jpg" 
+                                     alt="Golden Hour Embrace" 
                                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
-                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Forever+Begins+Now';" />
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
                                 <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
 
+                                <!-- Editorial Overlay Caption -->
                                 <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
-                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Sunset Vignette</span>
-                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Forever Begins Now</h3>
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
+					
+					<!-- Slide-->
+                    <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
+                        <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
+                            <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
+                            
+                            <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
+                                <img src="Moments/Anniversary_HP_2.jpg" 
+                                     alt="Golden Hour Embrace" 
+                                     class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
+
+                                <!-- Editorial Overlay Caption -->
+                                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- Slide-->
+                    <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
+                        <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
+                            <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
+                            
+                            <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
+                                <img src="Moments/Pre_Engagement.jpg" 
+                                     alt="Golden Hour Embrace" 
+                                     class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
+
+                                <!-- Editorial Overlay Caption -->
+                                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- Slide-->
+                    <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
+                        <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
+                            <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
+                            
+                            <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
+                                <img src="Moments/Post_Engagement_1.jpg" 
+                                     alt="Golden Hour Embrace" 
+                                     class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
+
+                                <!-- Editorial Overlay Caption -->
+                                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- Slide-->
+                    <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
+                        <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
+                            <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
+                            
+                            <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
+                                <img src="Moments/Blossoms_1.jpg" 
+                                     alt="Golden Hour Embrace" 
+                                     class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
+
+                                <!-- Editorial Overlay Caption -->
+                                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- Slide-->
+                    <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
+                        <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
+                            <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
+                            
+                            <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
+                                <img src="Moments/Blossoms_2.jpg" 
+                                     alt="Golden Hour Embrace" 
+                                     class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
+
+                                <!-- Editorial Overlay Caption -->
+                                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- Slide-->
+                    <div class="swiper-slide w-64 xs:w-72 sm:w-80 md:w-[360px]">
+                        <div class="relative bg-white/80 backdrop-blur-md p-2.5 sm:p-3.5 rounded-[1.5rem] sm:rounded-[2rem] border border-goldLeaf/40 shadow-2xl overflow-hidden group">
+                            <!-- Soft Active Ambient Halo -->
+                            <div class="carousel-gold-halo absolute -inset-1 bg-gradient-to-r from-goldLeaf/25 via-amber-200/40 to-goldLeaf/25 rounded-[1.8rem] sm:rounded-[2.2rem] blur-xl opacity-0 scale-95 transition-all duration-700 pointer-events-none"></div>
+                            
+                            <div class="relative aspect-[3/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden border border-goldLeaf/20 shadow-sm">
+                                <img src="Moments/Blossoms_3.jpg" 
+                                     alt="Golden Hour Embrace" 
+                                     class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                                     onerror="this.src='https://placehold.co/600x800/FAF8F5/C5A059?text=Golden+Hour+Embrace';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-deepMahogany/80 via-transparent to-transparent opacity-90"></div>
+
+                                <!-- Editorial Overlay Caption -->
+                                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 text-left space-y-0.5">
+                                    <span class="font-cinzel text-[8px] sm:text-[9px] text-amber-200/90 font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase block">Antipolo Sunset Session</span>
+                                    <h3 class="font-serif italic text-base sm:text-lg text-white font-semibold drop-shadow-sm">Golden Hour Embrace</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					
+					
                 </div>
+
 
                 <!-- Custom Pagination Bullets -->
                 <div class="swiper-pagination !-bottom-1"></div>
@@ -443,6 +598,15 @@
             </button>
         </div>
     </section>
+	
+	<!-- PREMIUM METALLIC DIVIDER WITH FILIPINIANA MOTIF -->
+    <div class="relative py-4 flex items-center justify-center max-w-xl mx-auto px-6">
+        <div class="flex-grow h-px bg-gradient-to-r from-transparent via-goldLeaf to-amber-200"></div>
+        <div class="mx-3 text-goldLeaf rotate-45 transform text-[8px]">
+            <i class="fas fa-diamond"></i>
+        </div>
+        <div class="flex-grow h-px bg-gradient-to-l from-transparent via-goldLeaf to-amber-200"></div>
+    </div>
 
     <!-- CEREMONY & RECEPTION DETAILS SECTION -->
     <section id="details" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto space-y-8 sm:space-y-12">
@@ -491,7 +655,7 @@
                     </div>
                     <div class="space-y-1.5 sm:space-y-2">
                         <span class="font-cinzel text-[10px] sm:text-xs text-goldLeaf font-bold tracking-[0.2em] uppercase">The Evening Reception</span>
-                        <h3 class="font-serif text-xl sm:text-1xl md:text-2xl text-deepMahogany font-bold">Villa Ardin Events Place</h3>
+                        <h3 class="font-serif text-xl sm:text-1xl md:text-2xl text-deepMahogany font-bold">Villa Ardin</br>Events Place</h3>
                         <p class="font-sans text-xs sm:text-sm text-goldLeaf font-bold uppercase tracking-wider">4:30 PM • April 09, 2027</p>
                     </div>
                     <p class="font-sans text-xs sm:text-sm text-mahogany leading-relaxed max-w-sm mx-auto">
@@ -541,6 +705,14 @@
             </div>
         </div>
     </section>
+	<!-- PREMIUM METALLIC DIVIDER WITH FILIPINIANA MOTIF -->
+    <div class="relative py-4 flex items-center justify-center max-w-xl mx-auto px-6">
+        <div class="flex-grow h-px bg-gradient-to-r from-transparent via-goldLeaf to-amber-200"></div>
+        <div class="mx-3 text-goldLeaf rotate-45 transform text-[8px]">
+            <i class="fas fa-diamond"></i>
+        </div>
+        <div class="flex-grow h-px bg-gradient-to-l from-transparent via-goldLeaf to-amber-200"></div>
+    </div>
 
     <!-- HONORARY FAMILY & ENTOURAGE SECTION -->
     <section id="entourage" class="py-16 sm:py-20 px-4 sm:px-6 max-w-5xl mx-auto space-y-8 sm:space-y-10">
@@ -619,6 +791,14 @@
         </div>
     </section>
 
+<!-- PREMIUM METALLIC DIVIDER WITH FILIPINIANA MOTIF -->
+    <div class="relative py-4 flex items-center justify-center max-w-xl mx-auto px-6">
+        <div class="flex-grow h-px bg-gradient-to-r from-transparent via-goldLeaf to-amber-200"></div>
+        <div class="mx-3 text-goldLeaf rotate-45 transform text-[8px]">
+            <i class="fas fa-diamond"></i>
+        </div>
+        <div class="flex-grow h-px bg-gradient-to-l from-transparent via-goldLeaf to-amber-200"></div>
+    </div>
     <!-- ATTIRE & WEDDING MOTIF PALETTE SECTION -->
     <section id="attire" class="py-16 sm:py-20 px-4 sm:px-6 bg-sunset-gradient">
         <div class="max-w-5xl mx-auto space-y-8 sm:space-y-12">
@@ -720,6 +900,14 @@
             </div>
         </div>
     </section>
+	<!-- PREMIUM METALLIC DIVIDER WITH FILIPINIANA MOTIF -->
+    <div class="relative py-4 flex items-center justify-center max-w-xl mx-auto px-6">
+        <div class="flex-grow h-px bg-gradient-to-r from-transparent via-goldLeaf to-amber-200"></div>
+        <div class="mx-3 text-goldLeaf rotate-45 transform text-[8px]">
+            <i class="fas fa-diamond"></i>
+        </div>
+        <div class="flex-grow h-px bg-gradient-to-l from-transparent via-goldLeaf to-amber-200"></div>
+    </div>
 
     <!-- RSVP FORM SECTION -->
     <section id="rsvp" class="py-16 sm:py-20 px-4 sm:px-6 max-w-3xl mx-auto">
@@ -727,7 +915,7 @@
             <div class="text-center space-y-2 sm:space-y-3">
                 <span class="font-cinzel text-xs sm:text-sm tracking-[0.25em] sm:tracking-[0.3em] text-goldLeaf font-bold uppercase">Response</span>
                 <h2 class="font-cinzelDeco text-2xl sm:text-4xl md:text-5xl text-deepMahogany font-bold">RSVP</h2>
-                <p class="font-serif italic text-xs sm:text-sm text-mahogany font-medium">Kindly confirm your attendance by March 01, 2027.</p>
+                <p class="font-serif italic text-xs sm:text-sm text-mahogany font-medium">Kindly confirm your attendance by <b>March 01, 2027</b>.</p>
             </div>
 
             <!-- Important Guest Reminders Box -->
